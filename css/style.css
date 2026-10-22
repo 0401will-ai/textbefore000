@@ -1,0 +1,435 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --wt: #fbfffc9f;
+    --c0: #fbfffc;
+    --c1: #11b382;
+    --c2: #2ec2c7;
+    --c3: #54d7db;
+    --c4: #54db9c;
+    --c5: #8af0e2;
+    --b: #272626;
+    --bt: #27262691;
+}
+
+.t-c0 {
+    color: var(--c0) !important;
+}
+
+.t-c1 {
+    color: var(--c1) !important;
+}
+
+.t-c2 {
+    color: var(--c2) !important;
+}
+
+.t-c3 {
+    color: var(--c3) !important;
+}
+
+.t-c4 {
+    color: var(--c4) !important;
+}
+
+.t-c5 {
+    color: var(--c5) !important;
+}
+
+.t-b {
+    color: var(--b) !important;
+}
+
+.t-bt {
+    color: var(--bt) !important;
+}
+
+.t-wt {
+    color: var(--wt) !important;
+}
+
+.bg-c0 {
+    background-color: var(--c0);
+}
+
+.bg-c1 {
+    background-color: var(--c1);
+}
+
+.bg-c2 {
+    background-color: var(--c2);
+}
+
+.bg-c3 {
+    background-color: var(--c3);
+}
+
+.bg-c4 {
+    background-color: var(--c4);
+}
+
+.bg-c5 {
+    background-color: var(--c5);
+}
+
+.bg-b {
+    background-color: var(--b);
+}
+
+.bg-bt {
+    background-color: var(--bt);
+}
+
+.bg-wt {
+    background-color: var(--wt);
+}
+
+.gra {
+    color: transparent;
+    background: linear-gradient(45deg, var(--c2), var(--c2), var(--c5), var(--c2), var(--c2));
+    background-size: 300% 100%;
+    background-clip: text;
+    animation: 3s gra linear infinite;
+}
+
+@keyframes gra {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 300% 0;
+    }
+}
+
+.bg-gra {
+    background: linear-gradient(45deg, var(--c2), var(--c5));
+}
+
+.bg-gra0 {
+    background: linear-gradient(45deg, var(--c2), var(--c5), transparent);
+}
+
+.bg-gra00 {
+    background: linear-gradient(135deg, transparent 70%, var(--c1) 70%);
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+}
+
+.blur0 {
+    filter: blur(50px);
+}
+
+.tsh {
+    text-shadow: 0 0 5px #000;
+}
+
+.t-e {
+    font-family: monospace;
+}
+
+.d-fxcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ais {
+    align-items: start !important;
+}
+
+.aie {
+    align-items: end !important;
+}
+
+.jcs {
+    justify-content: start !important;
+}
+
+.jce {
+    justify-content: end !important;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+.pf{
+    position: fixed;
+}
+.z-10 {
+    z-index: 10;
+}
+.z-max {
+    z-index: 9999;
+}
+
+.d3 {
+    perspective: 1200px;
+}
+
+.bgi {
+    background: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgia{
+    background-size: 300% 100%;
+    animation: gra 50s linear infinite;
+}
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+.header a.btn.active{
+    color: transparent;
+    background: linear-gradient(45deg, var(--c1), var(--c1), var(--c1), var(--c5), var(--c1), var(--c1), var(--c1));
+    background-size: 300% 100%;
+    background-clip: text;
+    animation: 3s gra linear infinite;
+    transform: scale(1.05);    
+}
+.btn1:hover {
+    color: var(--c2) !important;
+}
+
+.btn10 {
+    background: linear-gradient(45deg, var(--c2), var(--c5), var(--c2));
+    background-size: 300% 100%;
+    background-position: 0 0;
+}
+
+.btn10:hover {
+    background-position: 100% 0;
+}
+
+.card {
+    transition: 0.5s;
+}
+
+img {
+    transition: 0.3s;
+}
+
+.header {
+    transition: 0.5s;
+}
+
+.header.a1 {
+    top: 1%;
+    width: 95%;
+    background-color: var(--c0);
+    box-shadow: 0 5px 10px -5px var(--b) !important;
+}
+
+.header.a2 {
+    top: 5%;
+}
+
+.header.a2 .btn {
+    color: var(--c0);
+}
+
+.header.a1 .btn {
+    color: var(--bt);
+}
+
+.big {
+    transition: 0.7s;
+}
+
+.header.a2 .big {
+    color: var(--c0) !important;
+    font-size: 7vw !important;
+    top: 15vh;
+    left: 12%;
+}
+
+.header.a1 .big {
+    top: 20%;
+    left: 5%;
+}
+
+.carousel-item.active .progress-bar {
+    animation: pro 5s alternate;
+}
+
+@keyframes pro {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.carousel-item .card {
+    transform: translateX(50px);
+    filter: blur(10px);
+}
+
+.carousel-item.active .card {
+    animation: cc 0.5s alternate;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+
+@keyframes cc {
+    0% {
+        transform: translateX(50px);
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        filter: blur(0px);
+    }
+}
+
+section {
+    padding: 15vh 5vw !important;
+}
+
+#s1 .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px -5px var(--c5) !important;
+}
+
+#s2 .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 20px -5px var(--c5) !important;
+}
+
+.card3d {
+    transform-style: preserve-3d;
+}
+
+.card3d:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px -5px var(--c5) !important;
+}
+
+.card:hover img {
+    transform: scale(1.02);
+}
+
+.AI {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    max-width: 80%;
+    display: none;
+    z-index: 9999;
+}
+
+.msg {
+    left: var(--left);
+    min-width: 200px;
+    animation: msg var(--time) linear forwards;
+}
+
+@keyframes msg {
+    0% {
+        opacity: 0;
+        transform: translate3d(calc(var(--move)*1), 0vh, 0);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translate3d(calc(var(--move)*-1), -25vh, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate3d(calc(var(--move)*1), -50vh, 0);
+    }
+
+    75% {
+        opacity: 0.7;
+        transform: translate3d(calc(var(--move)*-1), -75vh, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(calc(var(--move)*1), -100vh, 0);
+    }
+}
+
+.msgtext1 {
+    top: 10%;
+    left: 20%;
+    transform: rotateZ(90deg);
+    font-size: 18vh !important;
+}
+
+.msgtext2 {
+    font-size: 18vh !important;
+    bottom: 10%;
+    right: 20%;
+    transform: rotateZ(-90deg);
+}
+
+.w-md-40 {
+    width: 90% !important;
+}
+
+.w-md-30 {
+    width: 90% !important;
+}
+
+.vh55 {
+    height: 60vh !important;
+}
+
+.h-40 {
+    height: 40% !important;
+}
+
+@media (min-width:768px) {
+    .msgtext1 {
+        top: 10%;
+        left: -10%;
+        transform: rotateZ(90deg);
+        font-size: 18vh !important;
+    }
+
+    .msgtext2 {
+        font-size: 18vh !important;
+        bottom: 10%;
+        right: -10%;
+        transform: rotateZ(-90deg);
+    }
+
+    .vh55 {
+        height: 55vh !important;
+    }
+
+    .end-md-50 {
+        right: 50% !important;
+    }
+
+    .w-md-40 {
+        width: 40% !important;
+    }
+
+    .w-md-30 {
+        width: 30% !important;
+    }
+
+    section {
+        padding: 15vh 5vw !important;
+    }
+}
